@@ -1,0 +1,50 @@
+.destContainer{
+    min-height: 100vh;
+    background: url(../../assets/destination/background-destination-desktop.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    color: #fff;
+}
+img{
+    margin-top: 3rem;
+}
+
+.destDetails{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 150px;
+   flex-direction: row;
+   gap: 3rem;
+}
+
+.image{
+    width: 50%;
+    height: 50%;
+}
+
+.details{
+    width: 50%;
+    height: 50%;
+}
+
+p{
+    color: #fff;
+    padding-left: 2rem;
+    letter-spacing: 2.5px;
+    text-decoration: uppercase;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+}
