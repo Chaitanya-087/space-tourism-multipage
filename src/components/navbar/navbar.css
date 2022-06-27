@@ -37,9 +37,11 @@
 .number{
     font-weight: bold;
 }
+
 .navItem{
     height: 100%;
 }
+
 .navLink {
     display: flex;
     align-items: center;
@@ -51,4 +53,14 @@
     text-transform: uppercase;
     font-size: medium;
     letter-spacing: 1.2px;
+    position: relative;
+}
+
+.navLink.active::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    height: 3px;
+    background-color: #fff;
 }

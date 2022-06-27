@@ -7,11 +7,14 @@ import Crew from "./pages/crew/Crew";
 import Technology from "./pages/technology/Technology";
 
 function App() {
-  
+  const [openSidebar,setOpenSidebar] = useState(false)
+  const toggleSidebar = () => {
+    setOpenSidebar(!openSidebar)
+  }
   return (
     <Router>
-        <Navbar />
-        <Sidebar />
+        <Navbar toggle={toggleSidebar} />
+        <Sidebar isOpen={openSidebar} open={toggleSidebar}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/destination" element={<Desitination/>}/>
