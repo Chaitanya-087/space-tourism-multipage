@@ -4,7 +4,6 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 p{
@@ -43,8 +42,5 @@ p{
 .list{
     display: flex;
     flex-direction: row;
-    text-decoration: none;
-}
-ul li{
-    text-decoration: none;
+    list-style: none;
 }

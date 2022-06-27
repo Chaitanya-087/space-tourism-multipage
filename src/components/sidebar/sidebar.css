@@ -9,9 +9,9 @@
     padding: 20px 0 20px 20px;
 }
 .sidebar.active{
-    
     animation: slide 200ms ease-in-out forwards 1;
 }
+
 @keyframes slide {
     to{
         right:0;
@@ -36,8 +36,13 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    position: relative;
 }
-.sideLink.active .sideLink::after{
-
-
+.sideLink.active::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 3px;
+    right: 0;
+    background-color: #fff;
 }
