@@ -1,13 +1,11 @@
 .navbar {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
-    height: 80px;
-    padding-inline-start: 1.5rem;
-    z-index: 2;
+    padding-inline-start: 2rem;
 }
 
 .primaryNavigation {
@@ -16,45 +14,39 @@
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
     height: 100%;
-    padding: 0 20px;
-    width: 55%;
     position: relative;
-    z-index: 2;
 }
 .primaryNavigation::after{
-    width: 70%;
-    left: 0;
-    content: '';
     position: absolute;
-    height: 1px;
-    z-index: -1;
-    background-color: #979797;
-    opacity: 35%;
+    content: '';
     top: 50%;
+    width: 80%;
+    height: 1px;
+    background-color: #979797;
+    opacity: 40%;
     transform: translateX(-90%);
 }
 
 .navItems {
-    margin-left: 10rem;
+    margin:0 5rem 0 10rem;
     display: flex;
     list-style: none;
-    gap: 4rem;
     align-items: center;
     height: 100%;
 }
 .number{
     font-weight: bold;
 }
-.navItem {
+.navItem{
+    height: 100%;
+}
+.navLink {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    color: #fff;
+    padding-inline:1.25rem;
     height: 100%;
-}
-
-.navItem>a {
+    gap: 8px;
     color: #fff;
     text-transform: uppercase;
     font-size: medium;
