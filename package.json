@@ -13,8 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -i build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -i build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
+    "react-responsive": "^9.0.0-beta.10",
     "react-router-dom": "^6.3.0"
   }
 }
