@@ -2,12 +2,12 @@ import React from 'react'
 import './destination.css'
 import moon from '../../assets/destination/image-moon.webp'
 
-const Desitination = () => {
+const Desitination = ({ desitinations }) => {
   return (
     <div className='destContainer'>
       <div className="destDetails">
         <div className="image">
-          <p><span>01</span> PICK YOUR DESTINATION</p>
+          <p className='title'><span>01</span> PICK YOUR DESTINATION</p>
           <img src={moon} alt="moon" width='80%' height='80%' />
         </div>
         <div className="details">

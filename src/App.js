@@ -6,6 +6,8 @@ import Desitination from "./pages/destination/Desitination";
 import Crew from "./pages/crew/Crew";
 import Technology from "./pages/technology/Technology";
 import React,{useState} from "react";
+import data from './assets/data.json';
+
 function App() {
   const [openSidebar,setOpenSidebar] = useState(false)
   const toggleSidebar = () => {
@@ -17,7 +19,7 @@ function App() {
         <Sidebar isOpen={openSidebar} toggle={toggleSidebar}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/destination" element={<Desitination/>}/>
+        <Route path="/destination" element={<Desitination destinations = {data.destinations}/>}/>
         <Route path="/crew" element={<Crew/>} />
         <Route path="/technology" element={<Technology/>} />
       </Routes>
