@@ -6,10 +6,10 @@
     display: flex;
     align-items: center;
     padding-inline-start: 2rem;
+    justify-content: space-between;
 }
 
 .primaryNavigation {
-    margin-left: auto;
     background: rgba(151, 151, 151, 0.4);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
@@ -63,4 +63,14 @@
     bottom: 0;
     height: 3px;
     background-color: #fff;
+}
+
+.hamburger.vanish{
+    display: none;
+}
+/* mobile */
+@media screen and (max-width:480px){
+    .navbar{
+        padding-inline: 2rem;
+    }
 }

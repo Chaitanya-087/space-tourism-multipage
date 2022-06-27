@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Desitination from "./pages/destination/Desitination";
 import Crew from "./pages/crew/Crew";
 import Technology from "./pages/technology/Technology";
-
+import React,{useState} from "react";
 function App() {
   const [openSidebar,setOpenSidebar] = useState(false)
   const toggleSidebar = () => {
@@ -13,8 +13,8 @@ function App() {
   }
   return (
     <Router>
-        <Navbar toggle={toggleSidebar} />
-        <Sidebar isOpen={openSidebar} open={toggleSidebar}/>
+        <Navbar isClose={openSidebar} toggle={toggleSidebar} />
+        <Sidebar isOpen={openSidebar} toggle={toggleSidebar}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/destination" element={<Desitination/>}/>
