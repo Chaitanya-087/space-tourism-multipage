@@ -128,4 +128,8 @@ hr.hr-break{
     .planets{
         justify-content: flex-start;
     }
+    .planet-info{
+        justify-content: flex-start;
+        gap: 4rem;
+    }
 }

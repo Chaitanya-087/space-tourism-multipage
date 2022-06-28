@@ -10,9 +10,9 @@ const Desitination = ({ destinations }) => {
       <div className="dest-container">
         <div className="top">
           <p className='title fs-s'><span className='dest-number fw-700'>01</span> PICK YOUR DESTINATION</p>
-          <div className="image-wrapper">
-            <img className="dest-image" src={destinations[destIdx].image} alt="moon" />
-          </div>
+            <div className="image-wrapper">
+              <img className="dest-image" src={destinations[destIdx].image} alt="moon" />
+            </div>
         </div>
         <div className="dest-details">
           <div className="planets">
