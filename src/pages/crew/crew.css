@@ -1,4 +1,59 @@
-.crewContainer{
+.body{
     min-height: 100vh;
     background: url('../../assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crewContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    gap: 2rem;
+}
+
+
+.imageWrapper{
+    width: 40%;
+    justify-self: flex-end;
+    border: 1px solid white;
+    margin-top: 6rem;
+}
+
+.details{
+    width: 40%;
+    height: auto;
+    justify-self: flex-start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid white;
+}
+
+.details > .title{
+    /* align-self: flex-start; */
+    border: 2px solid white;
+    padding: 0rem;
+}
+
+.nav{
+    padding: 3rem;
+    align-self: flex-end;
+}
+
+.navigation{
+    cursor: pointer;
+    align-self: flex-end;
+}
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: circle;
+    content: hide;
 }
