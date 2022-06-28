@@ -30,6 +30,9 @@ a {
 ul {
   list-style: none;
 }
+ul > li {
+  list-style: none;
+}
 
 .fs-mb-xxlg {
   font-size: 80px;

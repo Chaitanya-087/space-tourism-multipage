@@ -1,9 +1,10 @@
-.body{
+.crew{
     min-height: 100vh;
     background: url('../../assets/crew/background-crew-desktop.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -11,49 +12,134 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    width: 90%;
-    gap: 2rem;
+    flex-direction: column;
+    margin-top: 5.2rem;
+    padding: 0 20px;
+    gap: 1rem;
+}
+.crewDetailsWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
 }
 
+.crewInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .imageWrapper{
-    width: 40%;
-    justify-self: flex-end;
-    border: 1px solid white;
-    margin-top: 6rem;
-}
-
-.details{
-    width: 40%;
-    height: auto;
-    justify-self: flex-start;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 2px solid white;
-}
-
-.details > .title{
-    /* align-self: flex-start; */
-    border: 2px solid white;
-    padding: 0rem;
-}
-
-.nav{
-    padding: 3rem;
-    align-self: flex-end;
-}
-
-.navigation{
-    cursor: pointer;
-    align-self: flex-end;
-}
-.nav-ul{
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    list-style: circle;
-    content: hide;
+    border-bottom:1px solid grey;
+}
+.crew-image{
+    width: min(60%,445px);
+}
+
+.crewDetailsWrapper > .details{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blobs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.blob{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--clr-primary-white);
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.blob.active{
+    opacity: 100;
+}
+@media only screen and (min-width : 640px) and (max-width:1000px){
+    .crew{
+        background: url(../../assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        padding: 0;
+    }
+    .crewContainer{
+        width: 80%;
+    }
+    .crewDetailsWrapper{
+        flex-direction: column;
+    }
+    .crewHeading{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .crewDetailsWrapper > .details {
+        flex-direction: column;
+    }
+    .imageWrapper{
+        border: none;
+    }
+    .crew-image{
+     
+    }
+
+}
+
+@media only screen and (min-width: 1080px){
+    .crew{
+        background: url(../../assets/crew/background-crew-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        position: relative;
+    }
+    .crewContainer{
+        align-items: flex-start;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .crewDetailsWrapper{
+        flex-direction: row;
+    }
+
+    .crewDetailsWrapper > .details{
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .imageWrapper{
+        width: 60%;
+        border: none;
+    }
+    .crew-image{
+        margin-left: auto;
+        align-self: flex-end;
+    }
+
+    .blobs{
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 2rem;
+        margin-top: 10rem;
+    }
+    .blob{
+        width: 10px;
+        height: 10px;
+    }
+
 }
