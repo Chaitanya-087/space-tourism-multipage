@@ -1,59 +1,78 @@
 .home{
     min-height: 100vh;
-    background: url(../../assets/home/background-home-desktop.jpg);
+    background: url(../../assets/home/background-home-mobile.jpg);
     background-position: top left !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .home-content-wrapper{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-top:4rem ;
-}
-
-.home-content-left{
-    width: 40%;
+    width: 90%;
+    gap: 3rem;
+    padding: 1rem 0;
+    margin-top: 5rem;
 }
 
 .home-content-right{
     display: flex;
     align-items: center;
-    width: 60%;
+    justify-content: center;
 }
 
 .home-content-right > .circle{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: var(--clr-primary-white);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
+    transition: box-shadow 200ms;
 }
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+.circle:hover {
+    box-shadow: 0 0 0 50px rgba(255,255,255,0.1);
+}
 
+@media only screen and (min-width : 500px) {
     .home{
-        background: url(../../assets/home/background-home-mobile.jpg);
-    } 
-
-    .home-content-left,.home-content-right{
-        width: 100%;
-        margin-top: 4.5rem;
+        background: url(../../assets/home/background-home-tablet.jpg);
+        background-position: center;
     }
-
     .home-content-wrapper{
-        flex-direction: column;
+        width: 80%;
+        gap: 3rem;
+    }   
+
+    .home-content-right{
+        padding-top: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .home{
+        background: url(../../assets/home/background-home-desktop.jpg);
+        align-items: center;
+    }
+    .home-content-wrapper{
+        flex-direction: row;
+        gap: 0;
+    }
+    .home-content-left{
+        width: 40%;
+    }
+    .home-content-right{
+        width: 60%;
     }
 
     .home-content-right>.circle{
-        width: 150px;
-        height: 150px;
-        margin: auto;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
     }
-
 }

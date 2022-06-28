@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
 const Navbar = ({ isClose,toggle }) => {
-    const isMobile = useMediaQuery({ query: '(max-width:480px)' })
+    const isMobile = useMediaQuery({ query: '(max-width:640px)' })
 
     const [activeLink, setActiveLink] = useState(1)
     const changeNav = (index) => {

@@ -4,7 +4,7 @@ import './home.css'
 const Home = () => {
   return (
     <main className='home'>
-      <div className='container container-mb home-content-wrapper'>
+      <div className='home-content-wrapper'>
         <div className="home-content-left">
           <p className='fs-s fs-mb-s text-uppercase text-mb-center' style={{lineHeight:'2',letterSpacing:'1.2px'}}>so, you want to travel to space</p>
           <h1 className='fs-xlg fs-mb-xxlg text-uppercase fw-400 belle text-mb-center'>space</h1>

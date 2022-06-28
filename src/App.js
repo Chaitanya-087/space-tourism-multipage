@@ -6,7 +6,7 @@ import Desitination from "./pages/destination/Desitination";
 import Crew from "./pages/crew/Crew";
 import Technology from "./pages/technology/Technology";
 import React,{useState} from "react";
-import data from './assets/data.json';
+import data from './assets/data';
 
 function App() {
   const [openSidebar,setOpenSidebar] = useState(false)

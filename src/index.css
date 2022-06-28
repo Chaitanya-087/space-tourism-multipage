@@ -1,111 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
-:root{
-  --clr-primary-black:hsl(230,35%,7%);
-  --clr-primary-pale-blue: hsl(231,77%,90%);
-  --clr-primary-white:hsl(0,0%,100%);
+
+:root {
+  --clr-primary-black: hsl(230, 35%, 7%);
+  --clr-primary-pale-blue: hsl(231, 77%, 90%);
+  --clr-primary-white: hsl(0, 0%, 100%);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow Condensed',sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
-.belle{
-  font-family: 'Bellefair',sans-serif;
+.belle {
+  font-family: 'Bellefair', sans-serif;
 }
 
-body{
+body {
   color: var(--clr-primary-white);
 }
 
-.fs-xxlg{
-  font-size: 150px;
-}
-
-.fs-xlg{
-  font-size: 100px;
-}
-
-.fs-lg{
-  font-size: 56px;
-}
-
-.fs-s{
-  font-size: 32px;
-}
-
-.fs-xs{
-  font-size: 28px;
-}
-
-.fs-14{
-  font-style: 14px;
-}
-
-.fs-16{
-  font-style: 16px;
-}
-
-.fw-400{
-  font-weight: 400;
-}
-.fw-500{
-  font-weight: 500;
-}
-.fw-600{
-  font-weight: 600;
-}
-.fw-700{
-  font-weight: 700;
-}
-.text-uppercase{
-  text-transform: uppercase;
-}
-
-.container{
-  width: 80%;
-  margin: auto;
-}
-
-a{
+a {
   text-decoration: none;
   color: var(--clr-primary-white);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
-  .fs-mb-xxlg{
-    font-size: 80px;
-  }
-  .fs-mb-xlg{
-    font-size: 56px;
-  }
-  .fs-mb-lg{
-    font-size:32px;
-  }
-  .fs-mb-s{
-    font-size:24px;
-  }
-  .fs-mb-16{
-    font-size: 16px;
-  }
-  .fs-mb-15{
-    font-size: 15px;
-  }
-  .fs-mb-18{
-    font-size: 18px;
-  }
+.fs-mb-xxlg {
+  font-size: 80px;
+}
+
+.fs-mb-xlg {
+  font-size: 56px;
+}
+
+.fs-mb-lg {
+  font-size: 32px;
+}
+
+.fs-mb-s {
+  font-size: 24px;
+}
+
+.fs-mb-16 {
+  font-size: 16px;
+}
+
+.fs-mb-15 {
+  font-size: 15px;
+}
+
+.fs-mb-18 {
+  font-size: 18px;
+}
+
+.fs-14 {
+  font-style: 14px;
+}
+
+.fs-16 {
+  font-style: 16px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:1080px){
   .text-mb-center{
     text-align: center;
   }
-  .container-mb{
-    width: 100%;
-    padding: 1rem;
+}
+@media screen and (min-width:642px) {
+
+  .fs-xxlg {
+    font-size: 150px;
   }
+
+  .fs-xlg {
+    font-size: 100px;
+  }
+
+  .fs-lg {
+    font-size: 56px;
+  }
+
+  .fs-s {
+    font-size: 32px;
+  }
+
+  .fs-xs {
+    font-size: 28px;
+  }
+
 }
