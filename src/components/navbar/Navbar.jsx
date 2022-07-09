@@ -30,25 +30,25 @@ const Navbar = ({ isClose,toggle }) => {
                 <nav className='primary-navigation'>
                     <ul className='nav-items'>
                         <li className='nav-item'>
-                            <Link className={`nav-link ${activeLink === 1 ? 'active' : ''}`} onClick={() => changeNav(1)} to='/'>
+                            <Link className={`nav-link ${activeLink === 1 ? 'active' : ''}`} onClick={() => changeNav(1)} to='/space-tourism-multipage'>
                                 <span className='number'>00</span>
                                 Home
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className={`nav-link ${activeLink === 2 ? 'active' : ''}`} onClick={() => changeNav(2)} to='/destination'>
+                            <Link className={`nav-link ${activeLink === 2 ? 'active' : ''}`} onClick={() => changeNav(2)} to='/space-tourism-multipage/destination'>
                                 <span className='number'>01</span>
                                 Destination
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className={`nav-link ${activeLink === 3 ? 'active' : ''}`} onClick={() => changeNav(3)} to='/crew'>
+                            <Link className={`nav-link ${activeLink === 3 ? 'active' : ''}`} onClick={() => changeNav(3)} to='/space-tourism-multipage/crew'>
                                 <span className='number'>02</span>
                                 Crew
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className={`nav-link ${activeLink === 4 ? 'active' : ''}`} onClick={() => changeNav(4)} to='/technology'>
+                            <Link className={`nav-link ${activeLink === 4 ? 'active' : ''}`} onClick={() => changeNav(4)} to='/space-tourism-multipage/technology'>
                                 <span className='number'>03</span>
                                 Technology
                             </Link>
