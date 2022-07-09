@@ -10,16 +10,20 @@
     flex-direction: column;
     padding: 20px 0 20px 20px;
     transition: all 0.5s ease-in-out;
+    z-index: 999;
 }
 .sidebar.active{
     animation: slide 200ms ease-in-out forwards 1;
 }
 
+
 @keyframes slide {
-    to{
+    100%
+    {
         right:0;
     }
 }
+
 
 .close-sidebar{
     margin:20px 20px 0 auto;

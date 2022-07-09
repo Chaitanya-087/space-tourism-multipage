@@ -11,7 +11,7 @@ import data from './assets/data';
 function App() {
   const [openSidebar,setOpenSidebar] = useState(false)
   const toggleSidebar = () => {
-    setOpenSidebar(!openSidebar)
+    setOpenSidebar(prev => !prev)
   }
   return (
     <Router>
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/destination" element={<Desitination destinations = {data.destinations}/>}/>
         <Route path="/crew" element={<Crew crewMembers={data.crew}/>} />
-        <Route path="/technology" element={<Technology/>} />
+        <Route path="/technology" element={<Technology technology={data.technology}/>} />
       </Routes>
     </Router>
   );
