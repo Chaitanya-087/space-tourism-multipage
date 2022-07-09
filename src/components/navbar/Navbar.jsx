@@ -30,7 +30,7 @@ const Navbar = ({ isClose,toggle }) => {
                 <nav className='primary-navigation'>
                     <ul className='nav-items'>
                         <li className='nav-item'>
-                            <Link className={`nav-link ${activeLink === 1 ? 'active' : ''}`} onClick={() => changeNav(1)} to='/home'>
+                            <Link className={`nav-link ${activeLink === 1 ? 'active' : ''}`} onClick={() => changeNav(1)} to='/'>
                                 <span className='number'>00</span>
                                 Home
                             </Link>

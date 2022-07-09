@@ -18,7 +18,7 @@ function App() {
         <Navbar isClose={openSidebar} toggle={toggleSidebar} />
         <Sidebar isOpen={openSidebar} toggle={toggleSidebar}/>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/destination" element={<Desitination destinations = {data.destinations}/>}/>
         <Route path="/crew" element={<Crew crewMembers={data.crew}/>} />
         <Route path="/technology" element={<Technology technology={data.technology}/>} />
